@@ -1,0 +1,45 @@
+{
+  "name": "cariber",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^6.18.2",
+    "@types/formidable": "^2.0.3",
+    "@types/gtag.js": "^0.0.8",
+    "antd": "^4.18.9",
+    "axios": "^0.24.0",
+    "cookies-next": "^2.0.3",
+    "dotenv": "^10.0.0",
+    "formidable": "^2.0.1",
+    "moment": "^2.29.1",
+    "next": "^12.0.10",
+    "react": "17.0.2",
+    "react-calendar": "^3.7.0",
+    "react-countdown-hook": "^1.1.1",
+    "react-dom": "17.0.2",
+    "react-facebook-login-typed": "^5.0.3",
+    "react-google-login": "^5.2.2",
+    "react-markdown": "^8.0.0",
+    "react-player": "^2.9.0",
+    "react-range": "^1.8.12",
+    "reactjs-popup": "^2.0.5",
+    "sass": "^1.45.1",
+    "screenfull": "^5.2.0",
+    "tus-js-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.2",
+    "@types/react": "17.0.37",
+    "@types/react-calendar": "^3.4.5",
+    "@types/react-dom": "^17.0.11",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.4"
+  }
+}
