@@ -1,0 +1,388 @@
+$maximum-pixel-space : 100;
+$maximum-pixel-size : 1000;
+$maximum-pixel-percentage : 101;
+
+@for $i from 0 to $maximum-pixel-percentage {
+  .p-w-#{$i} {
+    width: $i+0% !important;
+  }
+
+  .p-h-#{$i} {
+    height: $i+0% !important;
+  }
+
+  .h-vh-#{$i} {
+    height: #{$i}vh !important;
+  }
+}
+
+@for $i from 0 to $maximum-pixel-size {
+  .f-s-#{$i} {
+    font-size: #{$i}px;
+  }
+
+  .f-w-#{$i} {
+    font-weight: #{$i};
+  }
+
+  @media(max-width: $mobile-size) {
+    .sm-f-s-#{$i} {
+      font-size: #{$i}px !important;
+    }
+
+    .sm-f-w-#{$i} {
+      font-weight: #{$i} !important;
+    }
+  }
+
+  @media(max-width: $ipad-size) and (min-width: $mobile-size) {
+    .ipad-f-s-#{$i} {
+      font-size: #{$i}px !important;
+    }
+
+    .ipad-f-w-#{$i} {
+      font-weight: #{$i} !important;
+    }
+  }
+
+  .w-#{$i} {
+    width: #{$i}px !important;
+  }
+
+  .h-#{$i} {
+    height: #{$i}px !important;
+  }
+
+  .max-w-#{$i} {
+    max-width: #{$i}px !important;
+  }
+
+  .max-h-#{$i} {
+    max-height: #{$i}px !important;
+  }
+
+  .min-w-#{$i} {
+    min-width: #{$i}px !important;
+  }
+
+  .min-h-#{$i} {
+    min-height: #{$i}px !important;
+  }
+  @media(min-width: $ipad-size) {
+    .lg-w-#{$i} {
+      width: #{$i}px !important;
+    }
+
+    .lg-h-#{$i} {
+      height: #{$i}px !important;
+    }
+
+    .lg-max-w-#{$i} {
+      max-width: #{$i}px !important;
+    }
+
+    .lg-max-h-#{$i} {
+      max-height: #{$i}px !important;
+    }
+
+    .lg-min-w-#{$i} {
+      min-width: #{$i}px !important;
+    }
+
+    .lg-min-h-#{$i} {
+      min-height: #{$i}px !important;
+    }
+  }
+
+  @media(max-width: $mobile-size) {
+    .sm-w-#{$i} {
+      width: #{$i}px !important;
+    }
+
+    .sm-h-#{$i} {
+      height: #{$i}px !important;
+    }
+
+    .sm-max-w-#{$i} {
+      max-width: #{$i}px !important;
+    }
+
+    .sm-max-h-#{$i} {
+      max-height: #{$i}px !important;
+    }
+
+    .sm-min-w-#{$i} {
+      min-width: #{$i}px !important;
+    }
+
+    .sm-min-h-#{$i} {
+      min-height: #{$i}px !important;
+    }
+  }
+}
+
+@for $i from 0 to $maximum-pixel-space {
+  .m-#{$i} {
+    margin: #{$i}px !important;
+  }
+
+  .m-x-#{$i} {
+    margin-left: #{$i}px !important;
+    margin-right: #{$i}px !important;
+  }
+
+  .m-y-#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+
+  .m-t-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .m-r-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+
+  .m-b-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  .m-l-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}px !important;
+  }
+
+  .p-x-#{$i} {
+    padding-left: #{$i}px !important;
+    padding-right: #{$i}px !important;
+  }
+
+  .p-y-#{$i} {
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
+  }
+
+  .p-t-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+
+  .p-r-#{$i} {
+    padding-right: #{$i}px !important;
+  }
+
+  .p-b-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+
+  .p-l-#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  .b-r-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+
+  @media(min-width: $mobile-size) {
+    .lg-m-#{$i} {
+      margin: #{$i}px !important;
+    }
+
+    .lg-m-x-#{$i} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+
+    .lg-m-y-#{$i} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+
+    .lg-m-t-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+
+    .lg-m-r-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+
+    .lg-m-b-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+
+    .lg-m-l-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+
+    .lg-p-#{$i} {
+      padding: #{$i}px !important;
+    }
+
+    .lg-p-x-#{$i} {
+      padding-left: #{$i}px !important;
+      padding-right: #{$i}px !important;
+    }
+
+    .lg-p-y-#{$i} {
+      padding-top: #{$i}px !important;
+      padding-bottom: #{$i}px !important;
+    }
+
+    .lg-p-t-#{$i} {
+      padding-top: #{$i}px !important;
+    }
+
+    .lg-p-r-#{$i} {
+      padding-right: #{$i}px !important;
+    }
+
+    .lg-p-b-#{$i} {
+      padding-bottom: #{$i}px !important;
+    }
+
+    .lg-p-l-#{$i} {
+      padding-left: #{$i}px !important;
+    }
+
+    .lg-b-r-#{$i} {
+      border-radius: #{$i}px !important;
+    }
+  }
+
+  @media(max-width: $mobile-size) {
+    .sm-m-#{$i} {
+      margin: #{$i}px !important;
+    }
+
+    .sm-m-x-#{$i} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+
+    .sm-m-y-#{$i} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+
+    .sm-m-t-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+
+    .sm-m-r-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+
+    .sm-m-b-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+
+    .sm-m-l-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+
+    .sm-p-#{$i} {
+      padding: #{$i}px !important;
+    }
+
+    .sm-p-x-#{$i} {
+      padding-left: #{$i}px !important;
+      padding-right: #{$i}px !important;
+    }
+
+    .sm-p-y-#{$i} {
+      padding-top: #{$i}px !important;
+      padding-bottom: #{$i}px !important;
+    }
+
+    .sm-p-t-#{$i} {
+      padding-top: #{$i}px !important;
+    }
+
+    .sm-p-r-#{$i} {
+      padding-right: #{$i}px !important;
+    }
+
+    .sm-p-b-#{$i} {
+      padding-bottom: #{$i}px !important;
+    }
+
+    .sm-p-l-#{$i} {
+      padding-left: #{$i}px !important;
+    }
+
+    .sm-b-r-#{$i} {
+      border-radius: #{$i}px !important;
+    }
+  }
+
+  @media(max-width: $ipad-size) {
+    @media(min-width: $mobile-size) {
+      .ipad-m-#{$i} {
+        margin: #{$i}px !important;
+      }
+
+      .ipad-m-x-#{$i} {
+        margin-left: #{$i}px !important;
+        margin-right: #{$i}px !important;
+      }
+
+      .ipad-m-y-#{$i} {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+      }
+
+      .ipad-m-t-#{$i} {
+        margin-top: #{$i}px !important;
+      }
+
+      .ipad-m-r-#{$i} {
+        margin-right: #{$i}px !important;
+      }
+
+      .ipad-m-b-#{$i} {
+        margin-bottom: #{$i}px !important;
+      }
+
+      .ipad-m-l-#{$i} {
+        margin-left: #{$i}px !important;
+      }
+
+      .ipad-p-#{$i} {
+        padding: #{$i}px !important;
+      }
+
+      .ipad-p-x-#{$i} {
+        padding-left: #{$i}px !important;
+        padding-right: #{$i}px !important;
+      }
+
+      .ipad-p-y-#{$i} {
+        padding-top: #{$i}px !important;
+        padding-bottom: #{$i}px !important;
+      }
+
+      .ipad-p-t-#{$i} {
+        padding-top: #{$i}px !important;
+      }
+
+      .ipad-p-r-#{$i} {
+        padding-right: #{$i}px !important;
+      }
+
+      .ipad-p-b-#{$i} {
+        padding-bottom: #{$i}px !important;
+      }
+
+      .ipad-p-l-#{$i} {
+        padding-left: #{$i}px !important;
+      }
+
+      .ipad-b-r-#{$i} {
+        border-radius: #{$i}px !important;
+      }
+    }
+  }
+}

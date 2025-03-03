@@ -1,0 +1,155 @@
+@import "../sizer.scss";
+@import "../color.scss";
+
+$background-color: $color-black;
+$hide-on-desktop: false;
+$position: overlay;
+$hide-on-mobile: false;
+$mobile-header-dropdown-color: $color-black;
+$mobile-header-text-color: "";
+$mobile-text-alignment: center;
+$font-size-desktop: 18px;
+$font-size-ipad: 14px;
+$font-size-mobile: 16px;
+$logo-width: 120px;
+$btn-border-radius: 50px;
+
+.header {
+  button.color-primary:hover {
+    color: $color-tiger;
+  }
+
+  background-color: $background-color;
+
+  a.link-list-link {
+    @media (max-width: $ipad-size) {
+      margin: 0px 5px;
+    }
+
+    color: $color-tiger !important;
+  }
+
+  a.link-list-link:hover {
+    color: $color-tiger;
+  }
+
+  .dropdown-trigger {
+    color: $color-tiger !important;
+  }
+
+  .dropdown-trigger:hover {
+    color: $color-tiger;
+  }
+
+  .dropdown-item a {
+    color: $color-tiger;
+  }
+
+  .user-login a {
+    color: $color-tiger !important;
+  }
+
+  .hamburger-slice {
+    background-color: $color-tiger;
+  }
+
+  @media (min-width: $ipad-size) {
+    font-size: $font-size-desktop;
+
+    .dropdown-menu {
+      background-color: $background-color;
+    }
+  }
+
+  @media (max-width: $ipad-size) {
+    font-size: $font-size-ipad;
+  }
+
+
+  @media (max-width: 767px) {
+    font-size: $font-size-mobile;
+
+    a.link-list-link {
+      text-align: $mobile-text-alignment;
+      color: $mobile-header-text-color;
+    }
+
+    .dropdown-item a {
+      text-align: $mobile-text-alignment;
+      color: $mobile-header-text-color;
+    }
+
+    .user-login a {
+      text-align: $mobile-text-alignment;
+      color: $mobile-header-text-color;
+    }
+
+    .header-overlay .header-content-mobile {
+      padding: 20px 0;
+    }
+
+    .header-content-mobile {
+      text-align: $mobile-text-alignment;
+      background-color: $mobile-header-dropdown-color;
+
+      .btn {
+        margin: 0px;
+      }
+    }
+  }
+
+  .logo-image {
+    background-color: $color-black;
+    line-height: 1;
+    display: block;
+    width: $logo-width;
+  }
+
+  .header-block-cta {
+    display: block;
+    padding: 8px 5px;
+  }
+
+  .user-avatar-block {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  background: $color-buttermilk;
+  border-radius: 4px;
+
+  a {
+    color: $color-tiger;
+    font-size: 18px;
+  }
+
+  a:hover {
+    background: #d1cfc3;
+  }
+
+
+}
+
+.header-changed-password {
+  background-color: #ddf8f6;
+  color: #04696C;
+  display: flex;
+  justify-content: center;
+
+  .row {
+    align-items: center;
+  }
+}
+
+.menu-item {
+  cursor: pointer;
+  text-align: end;
+  padding: 7px 20px;
+}

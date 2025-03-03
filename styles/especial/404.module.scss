@@ -1,0 +1,12 @@
+@import "../sizer.scss";
+
+.not-found {
+  h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+    @media(max-width: $ipad-size){
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.courses {
+  .form-group {
+    margin: 0px;
+  }
+
+  .grid-container {
+    @media (min-width: $ipad-size) {
+      display: grid !important;
+      grid-template-columns: 25.6% 25.6% 25.6% 25.6% !important;
+    }
+
+    @media (min-width: $mobile-size) and (max-width: $ipad-size) {
+      display: grid !important;
+      grid-template-columns: 33% 33% 33% !important;
+    }
+
+    .feature {
+      position: relative;
+    }
+
+    .course-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-coming {
+      position: absolute;
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  .feature-image {
+    border-radius: 4px;
+  }
+
+  .feature-text {
+    margin-top: 5px !important;
+  }
+
+  .block-type-feature {
+    margin-bottom: 30px !important;
+  }
+}

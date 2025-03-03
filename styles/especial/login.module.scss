@@ -1,0 +1,84 @@
+@import "../sizer.scss";
+
+.login {
+  .social-registration {
+    .btn {
+      background-color: white;
+      border-color: #c1c1c1;
+      color: #5d5d5d;
+      margin: 20px 0px 0px 0px;
+
+      p {
+        align-self: center;
+        padding: 0px;
+        margin: 0;
+      }
+
+      hr {
+        border-color: #c1c1c1;
+        border-top-width: 0px;
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+        border-left-width: 0px;
+        margin: 0px 20px;
+
+        @media (max-width: $mobile-size) {
+          margin: 0px 10px;
+        }
+      }
+
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        padding-left: 15px;
+      }
+    }
+
+    .line-or {
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+
+      hr {
+        width: 41.6666666667%;
+        height: 0px;
+        margin: 0px;
+        padding: 0px;
+        border-top: 1px solid #c1c1c1;
+      }
+
+      p {
+        width: 16.6667%;
+        padding: 0px;
+        margin: 0px
+      }
+    }
+  }
+
+  .jus-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .auth-link {
+    display: inline-block;
+    margin-top: 30px;
+  }
+
+  .link-colorful {
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    text-decoration: none;
+    color: #e74c3c;
+  }
+
+  .auth-image {
+    margin-bottom: 2rem;
+  }
+
+  .facebook-icon {
+    max-height: 25px;
+    margin: auto 0px;
+  }
+}

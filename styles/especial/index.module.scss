@@ -1,0 +1,23 @@
+@import "../sizer.scss";
+@import "../color.scss";
+
+.index {
+  .disclaimer-text {
+    font-size: 16px;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+    color: $color-pink;
+  }
+
+  .feature-text {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .block {
+    @media (max-width: $mobile-size) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

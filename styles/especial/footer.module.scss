@@ -1,0 +1,108 @@
+@import "../sizer.scss";
+@import "../color.scss";
+
+$text-color: #fbf5e3;
+$background-color: $color-black;
+$hide-on-desktop: false;
+$vertical-layout: false;
+$hide-on-mobile: false;
+$font-size-desktop: 16px;
+$font-size-mobile: 14px;
+$logo-text-color: "";
+$logo-width: 40px;
+$social-icons-text-color: #fbf5e3;
+$social-icons-background-color: #ffffff;
+
+#section-footer {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer {
+    .link-list {
+        justify-content: right;
+
+        @media (max-width: $mobile-size) {
+            justify-content: center;
+        }
+    }
+
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+    .footer-block {
+        font-size: $font-size-mobile;
+        color: $text-color;
+        background-color: $background-color;
+    }
+
+    .logo-text {
+        color: $logo-text-color;
+    }
+
+    a.link-list-link {
+        color: $text-color !important;
+    }
+
+    .link-list-link:hover {
+        color: $text-color !important;
+    }
+
+    .footer-block {
+        @media (min-width: $mobile-size) {
+            font-size: $font-size-desktop;
+        }
+    }
+
+    .powered-by {
+        background-color: $background-color;
+    }
+
+    .logo-image {
+        line-height: 1;
+        display: block;
+        width: $logo-width;
+    }
+
+    .social-icons-icon {
+        color: $social-icons-text-color !important;
+    }
+
+    .social-icons-round .social-icons-icon {
+        background-color: $social-icons-background-color;
+    }
+
+    .social-icons-square .social-icons-icon {
+        background-color: $social-icons-background-color;
+    }
+
+    .footer-container> :first-child {
+        margin-left: 0 !important;
+    }
+
+    .footer-container> :last-child {
+        margin-right: 0 !important;
+    }
+
+    .footer-block {
+        margin: 10px 7px;
+    }
+
+    .link-list {
+        display: block;
+        text-align: center;
+    }
+
+    .link-list-link {
+        margin: 5px 10px;
+
+        @media (max-width: $mobile-size) {
+            display: block;
+        }
+    }
+}

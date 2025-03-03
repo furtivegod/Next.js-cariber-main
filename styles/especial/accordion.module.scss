@@ -1,0 +1,61 @@
+@import "../color.scss";
+
+.accordion-outside {
+
+  .text-title{
+    line-height: 1.1;
+  }
+  
+  .accordion-progress {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .accordion-title {
+    height: fit-content;
+    align-items: center;
+  }
+
+  .accordion-body {
+    padding: 9px 20px;
+  }
+
+  .block-type-accordion {
+    padding: 15px;
+  }
+
+  .accordion {
+    border: 4px none $color-tiger;
+    border-radius: 4px;
+  }
+
+  .accordion-frame {
+    border-radius: 4px;
+  }
+
+  .dark {
+    background-color: #243941;
+  }
+
+  .light {
+    background-color: #fff;
+  }
+
+  .accordion-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 10px;
+  }
+
+  [class*="col-"]{
+    @media (max-width: $ipad-size) {
+      width: 100% !important;
+    }    
+  }
+
+  .accordion-frame-active{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}

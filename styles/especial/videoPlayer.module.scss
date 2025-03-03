@@ -1,0 +1,171 @@
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player-wrapper {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video-player {
+  .continue-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .continue-block {
+      padding-top: 10%;
+      color: white !important;
+      display: flex;
+      flex-direction: column;
+      max-height: 100%;
+      height: 100%;
+
+      @media(max-width: $ipad-size) {
+        padding-top: 3%;
+      }
+
+      .child-block {
+        text-align: center;
+      }
+
+      .image-block {
+        @media(min-width: $mobile-size) and (max-width: $ipad-size) {
+          padding: 0px 170px;
+        }
+
+        @media(max-width: $mobile-size) {
+          padding: 0px 120px;
+        }
+      }
+
+      .button-block {
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .controls-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .video-controller {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(231, 78, 37, 0.7);
+    display: flex;
+    left: 0px;
+    right: 0px;
+    bottom: -1px;
+    width: 100%;
+    padding: 0px 2%;
+    height: 35px;
+    -o-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .control-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+
+    @media(max-width: $mobile-size) {
+      height: 15px;
+      width: 25px;
+    }
+  }
+
+  .control-button:hover {
+    background-color: rgb(33, 33, 34);
+    opacity: 0.7;
+  }
+
+  .video-progress {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 0px 10px;
+  }
+
+  video {
+    margin-bottom: -8px;
+  }
+
+  .options-item {
+    position: absolute;
+    bottom: 35px;
+  }
+
+  .option-resolutions {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(33, 33, 34, 0.7);
+
+    button {
+      border: none;
+      background: none;
+      color: white;
+    }
+
+    button:hover {
+      background-color: rgb(33, 33, 34);
+    }
+  }
+
+  .resolutions-active {
+    background-color: rgba(33, 33, 34) !important;
+  }
+
+  .volume-progress {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 40px;
+    position: absolute;
+    background-color: rgba(33, 33, 34, 0.7) !important;
+    background-color: white;
+    bottom: 35px;
+  }
+
+  .control-right-group {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.popup-player-options-content {
+  width: 40px !important;
+}
+
+.popup-player-volume-content {
+  padding: 5px 0px !important;
+  width: 25px !important;
+}

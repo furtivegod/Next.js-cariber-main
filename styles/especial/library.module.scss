@@ -1,0 +1,143 @@
+@import "../sizer.scss";
+@import "../color.scss";
+
+.library {
+
+  .frame-card {
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .resume-course-image {
+    @media (min-width: $mobile-size) {
+      width: 175px;
+      height: 98.4333px;
+    }
+  }
+
+  .product {
+    border: 1px ridge $color-tiger;
+    border-radius: 4px;
+  }
+
+  .product-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .progress-inner {
+    height: 10px;
+  }
+
+  .progress-outer {
+    height: 10px;
+  }
+
+  .progress {
+    padding: 10px 0 20px 0;
+  }
+
+  .resume-course-status,
+  .products-title {
+    color: $color-tiger;
+  }
+
+  .product-title,
+  .resume-course-title {
+    color: $color-blue;
+  }
+
+  .product-body {
+    color: $color-black;
+    line-height: 1;
+  }
+
+  .resume-course-text {
+    width: 60%;
+    margin-right: 5%;
+    text-align: right;
+
+    @media (max-width: $ipad-size) {
+      text-align: left;
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+
+  .grid-container {
+    @media (min-width: $ipad-size) {
+      width: 100%;
+      display: grid !important;
+      grid-template-columns: 33.33% 33.33% 33.33% !important;
+    }
+
+    @media(max-width: $ipad-size) and (min-width: $mobile-size) {
+      width: 100%;
+      display: grid !important;
+      grid-template-columns: 50% 50% !important;
+    }
+  }
+
+  .products-header {
+    @media (min-width: $ipad-size) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  }
+
+  .resume-course-positioner {
+    @media (min-width: $ipad-size) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      width: 100%;
+    }
+  }
+
+  .resume-course-content {
+    @media (min-width: $ipad-size) {
+      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: inherit;
+    }
+  }
+}

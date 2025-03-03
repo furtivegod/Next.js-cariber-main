@@ -1,0 +1,398 @@
+@import "../sizer.scss";
+@import "../color.scss";
+
+.product {
+
+  a.media:hover {
+    color: #ffffff;
+  }
+
+  .accordion {
+    @media(max-width: $ipad-size) {
+      h5 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .playlist-button {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #343434;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      -webkit-filter: brightness(115%);
+      filter: brightness(115%);
+    }
+  }
+
+  .progress {
+    height: 4px;
+  }
+
+  .progress-inner {
+    background-color: $color-tiger;
+  }
+
+  .progress-outer {
+    border-radius: 0px;
+  }
+
+  .md-3cm {
+    @media (max-width: $mobile-size) {
+      width: 3cm;
+    }
+  }
+
+  .check-item {
+    text-align: right;
+
+    @media (max-width: $mobile-size) {
+      text-align: left;
+    }
+  }
+
+  .md-pd-tb-10 {
+    @media (max-width: $mobile-size) {
+      padding: 10px 0px 10px 0px;
+    }
+  }
+
+  .instructor-title {
+    color: $color-tiger;
+  }
+
+  .instructor-name {
+    color: black;
+  }
+
+  .instructor-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  .media-middle {
+    align-self: center !important;
+  }
+
+  .media-left {
+    padding-right: 20px;
+  }
+
+  .syllabus-item {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    .media {
+      @media (max-width: $mobile-size) {
+        display: block;
+      }
+    }
+  }
+
+  .syllabus-text {
+    margin-top: .25rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    opacity: .5;
+    color: $color-black;
+  }
+
+  .syllabus-title {
+    color: black;
+    margin: 0px;
+  }
+
+  .background-products {
+    background-image: url("/product/background-products.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .background-products-overlap {
+    background: rgba(0, 0, 0, .5);
+    color: white !important;
+    text-align: center;
+  }
+
+  .text-white {
+    color: white !important;
+  }
+
+  .content-center {
+    justify-content: center;
+    display: flex;
+  }
+
+  .syllabus-heading {
+    color: black;
+    margin-bottom: 8px;
+  }
+
+  .player-nav {
+    display: block;
+    padding: 20px;
+    height: 78px;
+    background-color: white;
+
+    @media (min-width: $mobile-size) {
+      display: none;
+    }
+
+    a {
+      margin: 0px;
+      font-size: 75%;
+    }
+
+    a.disabled {
+      opacity: .3;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .media {
+      align-items: center;
+    }
+  }
+
+  .player-progress {
+    width: 40%;
+    height: 4px;
+  }
+
+  .track-count.active {
+    color: $color-tiger;
+    font-weight: 600;
+  }
+
+  .track-count {
+    font-size: 0.8125rem;
+    width: 10px;
+    white-space: nowrap;
+  }
+
+  .track {
+    background-color: #343434;
+    padding: 10px 12px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .track-title {
+    font-size: 0.8125rem;
+    margin: 0px;
+  }
+
+  .media-middle {
+    vertical-align: middle;
+  }
+
+  .playlist {
+    font-size: 16px;
+    height: 100%;
+    background: #343434;
+  }
+
+  .playlist-title h3 {
+    font-size: 0.75rem;
+    margin: 0 0 0 0;
+    opacity: .6;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+  }
+
+  .playlist-title h2 {
+    font-size: 0.875rem;
+    margin: 0 0 0 0;
+    color: white;
+  }
+
+  .playlist-title {
+    padding: 20px 30px;
+    background-color: #252525;
+  }
+
+  .player {
+    margin-bottom: 30px;
+    position: relative;
+    background: #252525;
+  }
+
+  .player-video,
+  .quiz-session {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+
+    @media (max-width: $mobile-size) {
+      width: 100%;
+    }
+  }
+
+  .player-playlist {
+    width: 30%;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: auto;
+
+    @media (max-width: $mobile-size) {
+      display: none;
+    }
+  }
+
+  .link-file {
+    background-color: white;
+    padding: 20px;
+
+    a {
+      color: #000;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  }
+
+  .nev-product {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-nev-product {
+    @media(max-width: $mobile-size) {
+      width: 70%;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .right-nev-product {
+    display: flex;
+    align-items: center;
+  }
+
+  .product-announcement {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-tiger;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+    span {
+      white-space: pre-line;
+
+      @media(max-width: $mobile-size) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .accordion-non-focus {
+    background-color: rgb(245, 245, 245) !important;
+  }
+
+  .accordion-frame {
+    border-radius: 0px !important;
+  }
+
+  .accordion-outside {
+    padding: 0px !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(191, 191, 191);
+  }
+
+  .accordion {
+    padding: 25px 30px !important;
+  }
+
+  .accordion-active {
+    color: white;
+    background-color: rgb(14, 27, 32) !important;
+
+    h5 {
+      color: white;
+    }
+  }
+
+  .block-type-accordion {
+    padding: 0px 0px !important;
+  }
+}
+
+.popup-product-sale-overlay{
+  padding: 0px !important;
+}
+
+.popup-product-sale-content {
+  padding: 5rem 1rem;
+  width: 100%;
+  background-color: $color-buttermilk;
+
+  h3 {
+    color: $color-tiger;
+    font-weight: 600;
+  }
+
+  h6 {
+    color: $color-tiger;
+  }
+
+  .pop-modal {
+    .close {
+      width: 25px;
+      height: 25px;
+      align-items: center;
+      top: 3rem;
+      right: 1rem;
+
+      p {
+        margin: 0px;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.popup-certificate-content{
+  text-align: center;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  background-color: $color-buttermilk;
+
+  @media (max-width: $mobile-size) {
+    width: 90%;
+  }
+
+  @media(max-width: $ipad-size) and (min-width: $mobile-size) {
+    width: 60%;
+  }
+}

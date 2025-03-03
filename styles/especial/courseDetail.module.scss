@@ -1,0 +1,63 @@
+.course-detail {
+  .tb-sizer> :first-child {
+    padding-top: 40px;
+  }
+
+  .tb-sizer>* {
+    padding: 20px 0px;
+  }
+
+  .tb-sizer> :last-child {
+    padding-bottom: 40px;
+  }
+
+  .speaker-detail-block> :first-child {
+    border-top: 2px dashed saddlebrown;
+  }
+
+  .item-speaker-detail {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-bottom: 2px dashed saddlebrown;
+    @media (max-width: $mobile-size) {
+      flex-direction: column;
+    }
+  }
+
+  .speaker-description {
+    text-align: left;
+    @media (min-width: $mobile-size) {
+      white-space: pre-line;
+    }
+    padding: 20px 10px;
+  }
+
+  .accordion-frame {
+    width: 100%;
+  }
+
+  .accordion-outside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .accordion-collapse{
+    width: 100%;
+  }
+
+  .grid-container {
+    width: 100%;
+
+    @media (min-width: $ipad-size) {
+      display: grid !important;
+      grid-template-columns: 33.3% 33.3% 33.3% !important;
+    }
+
+    @media (min-width: $mobile-size) and (max-width: $ipad-size) {
+      display: grid !important;
+      grid-template-columns: 50% 50% !important;
+    }
+  }
+}
